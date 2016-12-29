@@ -1,3 +1,5 @@
+Pluto will be at the 33C3, for more info check the [wiki page](https://events.ccc.de/congress/2016/wiki/Projects:Pluto).
+
 Pluto is a programmable digital watch that re-uses case and LCD 
 panel of the Casio® F-91W.  This is the software repo, for the 
 hardware side of things and a more information, see the
@@ -25,7 +27,7 @@ Linux. User interface (LCD screen and buttons) is provided by a Gtk+
 application the firmware connects to using a pair of ZeroMQ sockets. In 
 spite of being technically inaccurate, this mode of operation is called 
 'simulator'.
-This requirement lends requires dividing the firmware in three layers:
+This requirement requires dividing the firmware in three layers:
 
 ##Hardware Abstraction Layer (hal)
 This layer provides the interface to the underlying hardware. Currently, there are HALs for 
