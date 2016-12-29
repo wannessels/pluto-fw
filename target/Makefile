@@ -2,12 +2,12 @@
 # user defines ################################################################
 TARGET = main
 MCU = msp430fr6972
-INC = -I.
+INC = -I. -I/opt/ti/msp430_gcc/include/
 OUTDIR = output/target
 DEFINES =
 CFLAGS = $(DEFINES) -mmcu=$(MCU) -g3 -O3 -Wunused -ffunction-sections -MP -MMD #-Wall
 # ASFLAGS = -mmcu=$(MCU) -x assembler-with-cpp -Wa,-gstabs
-LDFLAGS = -mmcu=$(MCU) -Tmsp430fr6972.ld -Wl,-Map=$(OUTDIR)/$(TARGET).map,--gc-sections
+LDFLAGS = -mmcu=$(MCU) -L/opt/ti/msp430_gcc/include/ -Wl,-Map=$(OUTDIR)/$(TARGET).map,--gc-sections
 
 # calculated vars #############################################################
 SRC = $(TARGET).c
